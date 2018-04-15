@@ -1,0 +1,477 @@
+.Memo {
+  width: 100%;
+  height: 100%;
+}
+
+.Editor {
+  padding: 20px;
+  max-width: 980px;
+  right: 0;
+  left: 0;
+  margin: auto;
+  outline: none;
+}
+
+.Render {
+  padding: 20px;
+  max-width: 980px;
+  right: 0;
+  left: 0;
+  margin: auto;
+  outline: none;
+}
+
+.Render {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  line-height: 1.5;
+  color: #24292e;
+  font-family: BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  word-wrap: break-word;
+}
+
+.Render a {
+  background-color: transparent;
+}
+
+.Render a:active,
+.Render a:hover {
+  outline-width: 0;
+}
+
+.Render strong {
+  font-weight: inherit;
+}
+
+.Render strong {
+  font-weight: bolder;
+}
+
+.Render h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+.Render img {
+  border-style: none;
+}
+
+.Render code,
+.Render kbd,
+.Render pre {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+.Render hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+.Render input {
+  font: inherit;
+  margin: 0;
+}
+
+.Render input {
+  overflow: visible;
+}
+
+.Render [type="checkbox"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.Render * {
+  box-sizing: border-box;
+}
+
+.Render input {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.Render a {
+  color: #0366d6;
+  text-decoration: none;
+}
+
+.Render a:hover {
+  text-decoration: underline;
+}
+
+.Render strong {
+  font-weight: 600;
+}
+
+.Render hr {
+  height: 0;
+  margin: 15px 0;
+  overflow: hidden;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #dfe2e5;
+}
+
+.Render hr::before {
+  display: table;
+  content: "";
+}
+
+.Render hr::after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+.Render table {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+.Render td,
+.Render th {
+  padding: 0;
+}
+
+.Render h1,
+.Render h2,
+.Render h3,
+.Render h4,
+.Render h5,
+.Render h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.Render h1 {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.Render h2 {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.Render h3 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.Render h4 {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.Render h5 {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.Render h6 {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.Render p {
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+.Render blockquote {
+  margin: 0;
+}
+
+.Render ul,
+.Render ol {
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.Render ol ol,
+.Render ul ol {
+  list-style-type: lower-roman;
+}
+
+.Render ul ul ol,
+.Render ul ol ol,
+.Render ol ul ol,
+.Render ol ol ol {
+  list-style-type: lower-alpha;
+}
+
+.Render dd {
+  margin-left: 0;
+}
+
+.Render code {
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 12px;
+}
+
+.Render pre {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 12px;
+}
+
+.Render::before {
+  display: table;
+  content: "";
+}
+
+.Render::after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+.Render>*:first-child {
+  margin-top: 0 !important;
+}
+
+.Render>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+.Render a:not([href]) {
+  color: inherit;
+  text-decoration: none;
+}
+
+.Render p,
+.Render blockquote,
+.Render ul,
+.Render ol,
+.Render dl,
+.Render table,
+.Render pre {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.Render hr {
+  height: 0.25em;
+  padding: 0;
+  margin: 24px 0;
+  background-color: #e1e4e8;
+  border: 0;
+}
+
+.Render blockquote {
+  padding: 0 1em;
+  color: #6a737d;
+  border-left: 0.25em solid #dfe2e5;
+}
+
+.Render blockquote>:first-child {
+  margin-top: 0;
+}
+
+.Render blockquote>:last-child {
+  margin-bottom: 0;
+}
+
+.Render kbd {
+  display: inline-block;
+  padding: 3px 5px;
+  font-size: 11px;
+  line-height: 10px;
+  color: #444d56;
+  vertical-align: middle;
+  background-color: #fafbfc;
+  border: solid 1px #c6cbd1;
+  border-bottom-color: #959da5;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #959da5;
+}
+
+.Render h1,
+.Render h2,
+.Render h3,
+.Render h4,
+.Render h5,
+.Render h6 {
+  margin-top: 24px;
+  margin-bottom: 16px;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+.Render h1 {
+  padding-bottom: 0.3em;
+  font-size: 2em;
+  border-bottom: 1px solid #eaecef;
+}
+
+.Render h2 {
+  padding-bottom: 0.3em;
+  font-size: 1.5em;
+  border-bottom: 1px solid #eaecef;
+}
+
+.Render h3 {
+  font-size: 1.25em;
+}
+
+.Render h4 {
+  font-size: 1em;
+}
+
+.Render h5 {
+  font-size: 0.875em;
+}
+
+.Render h6 {
+  font-size: 0.85em;
+  color: #6a737d;
+}
+
+.Render ul,
+.Render ol {
+  padding-left: 2em;
+}
+
+.Render ul ul,
+.Render ul ol,
+.Render ol ol,
+.Render ol ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.Render li {
+  word-wrap: break-all;
+}
+
+.Render li>p {
+  margin-top: 16px;
+}
+
+.Render li+li {
+  margin-top: 0.25em;
+}
+
+.Render dl {
+  padding: 0;
+}
+
+.Render dl dt {
+  padding: 0;
+  margin-top: 16px;
+  font-size: 1em;
+  font-style: italic;
+  font-weight: 600;
+}
+
+.Render dl dd {
+  padding: 0 16px;
+  margin-bottom: 16px;
+}
+
+.Render table {
+  display: block;
+  width: 100%;
+  overflow: auto;
+}
+
+.Render table th {
+  font-weight: 600;
+}
+
+.Render table th,
+.Render table td {
+  padding: 6px 13px;
+  border: 1px solid #dfe2e5;
+}
+
+.Render table tr {
+  background-color: #fff;
+  border-top: 1px solid #c6cbd1;
+}
+
+.Render table tr:nth-child(2n) {
+  background-color: #f6f8fa;
+}
+
+.Render img {
+  max-width: 100%;
+  box-sizing: content-box;
+  background-color: #fff;
+}
+
+.Render img[align=right] {
+  padding-left: 20px;
+}
+
+.Render img[align=left] {
+  padding-right: 20px;
+}
+
+.Render code {
+  padding: 0.2em 0.4em;
+  margin: 0;
+  font-size: 85%;
+  background-color: rgba(27,31,35,0.05);
+  border-radius: 3px;
+}
+
+.Render pre {
+  word-wrap: normal;
+}
+
+.Render pre>code {
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+  word-break: normal;
+  white-space: pre;
+  background: transparent;
+  border: 0;
+}
+
+.Render pre {
+  padding: 16px;
+  overflow: auto;
+  font-size: 85%;
+  line-height: 1.45;
+  background-color: #f6f8fa;
+  border-radius: 3px;
+}
+
+.Render pre code {
+  display: inline;
+  max-width: auto;
+  padding: 0;
+  margin: 0;
+  overflow: visible;
+  line-height: inherit;
+  word-wrap: normal;
+  background-color: transparent;
+  border: 0;
+}
+
+.Render kbd {
+  display: inline-block;
+  padding: 3px 5px;
+  font: 11px "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  line-height: 10px;
+  color: #444d56;
+  vertical-align: middle;
+  background-color: #fafbfc;
+  border: solid 1px #d1d5da;
+  border-bottom-color: #c6cbd1;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #c6cbd1;
+}
+
+.Render hr {
+  border-bottom-color: #eee;
+}
