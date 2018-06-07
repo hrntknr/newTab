@@ -1,5 +1,5 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import NewTabPage from './jsx/index.jsx'
+import App from './app/app.jsx'
 
-ReactDOM.render(NewTabPage, document.getElementById('app'))
+ReactDOM.render(<App/>, document.getElementById('app'))
