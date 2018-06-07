@@ -1,12 +1,12 @@
 const path = require('path')
+const CopyWebpackPlugin = require('copy-webpack-plugin')
 
 module.exports = {
-  mode: 'production',
   context: path.join(__dirname, './src'),
-  entry: './main.jsx',
+  entry: './main.js',
   output: {
     publicPath: '/',
-    filename: 'build.js'
+    filename: 'build.js',
   },
   module: {
     rules: [
@@ -16,20 +16,13 @@ module.exports = {
         use: {
           loader: 'babel-loader',
           options: {
-            presets: ['@babel/preset-react', '@babel/preset-env', '@babel/preset-stage-3']
-          }
-        }
+            presets: ['@babel/preset-react', '@babel/preset-env'],
+          },
+        },
       },
       {
         test: /\.css$/,
-        use: [
-          {
-            loader: 'style-loader'
-          },
-          {
-            loader: 'css-loader?modules'
-          }
-        ]
+        loaders: ['style-loader', 'css-loader?modules'],
       },
       {
         test: /\.(jpe?g|png|gif|svg|ico)(\?.+)?$/,
@@ -38,12 +31,17 @@ module.exports = {
             loader: 'url-loader',
             options: {
               limit: 1024,
-              name: './img/[name].[ext]'
-            }
-          }
-        ]
-      }
-    ]
+              name: './img/[name].[ext]',
+            },
+          },
+        ],
+      },
+    ],
   },
-  plugins: []
+  plugins: [
+    new CopyWebpackPlugin([
+      {from: './index.html'},
+      {from: './manifest.json'},
+    ]),
+  ],
 }

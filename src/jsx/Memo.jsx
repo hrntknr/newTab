@@ -6,18 +6,18 @@ import reactRenderer from 'remark-react'
 const processor = remark().use(reactRenderer, {sanitize: false})
 
 export default class Memo extends React.Component {
-  constructor (...props) {
+  constructor(...props) {
     super(...props)
     this.state = {
       markdown: '',
       contents: '',
-      edit: false
+      edit: false,
     }
     this.changeToRender = this.changeToRender.bind(this)
     this.changeToEditor = this.changeToEditor.bind(this)
     this.editor = React.createRef()
   }
-  componentDidMount () {
+  componentDidMount() {
     Promise.resolve()
       .then(() => new Promise((resolve) => {
         chrome.storage.sync.get('data', ({data}) => {
@@ -33,7 +33,7 @@ export default class Memo extends React.Component {
       })
   }
 
-  changeToRender () {
+  changeToRender() {
     const markdown = this.editor.current.innerText
     this.setState({markdown})
     processor.process(markdown).then(({contents}) => {
@@ -42,11 +42,11 @@ export default class Memo extends React.Component {
     chrome.storage.sync.set({'data': markdown})
   }
 
-  changeToEditor () {
+  changeToEditor() {
     this.setState({edit: true})
   }
 
-  render () {
+  render() {
     return <div className={styles.Memo}>
       {(() => {
         if (this.state.edit) {

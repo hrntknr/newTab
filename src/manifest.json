@@ -4,18 +4,10 @@
   "name": "NewTab",
   "version": "1.0.0",
   "browser_action": {
-    "default_icon": {
-      "38": "icons/icon48.png"
-    },
     "default_title": "NewTab"
   },
   "chrome_url_overrides": {
     "newtab": "index.html"
-  },
-  "icons": {
-    "128": "icons/icon128.png",
-    "16": "icons/icon16.png",
-    "48": "icons/icon48.png"
   },
   "offline_enabled": true,
   "permissions": ["storage"]
