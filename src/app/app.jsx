@@ -1,5 +1,6 @@
 import React from 'react'
-import css from './app.css'
+import Memo from './memo.jsx'
+import './app.css'
 
 export default class Main extends React.Component {
   constructor(...props) {
@@ -13,9 +14,10 @@ export default class Main extends React.Component {
   }
 
   render() {
-    return <div className={css.root}>
-      <nav className={css.navbar}>
-      </nav>
+    return <div className="app--root">
+      {/* <nav className="app--navbar">
+      </nav> */}
+      <Memo/>
     </div>
   }
 }

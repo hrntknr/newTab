@@ -1,0 +1,21 @@
+.memo--root {
+  background: #fff;
+  height: 100%;
+  position: relative;
+  max-width: 50em;
+  margin: 0 auto;
+}
+
+.memo--editor {
+  box-sizing: border-box;
+  font-size: 1.2em;
+  padding: 2.5%;
+  height: 100%;
+  width: 100%;
+}
+
+.memo--editor pre {
+  background: #f9f9f9;
+  padding: 0.2em 0.5em;
+  position: relative;
+}
